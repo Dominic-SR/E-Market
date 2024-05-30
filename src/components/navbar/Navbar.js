@@ -31,7 +31,7 @@ function Navbar() {
       <div className='py-4'>
         <div className='container'>
           {/* Logo and Link Section */}
-          <div>
+          <div className='flex items-center gap-4'>
             <a
             href='#'
             className='text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl'
@@ -39,12 +39,12 @@ function Navbar() {
               E Market
             </a>
             {/* Menu items */}
-            <div>
-              <ul>
+            <div className='hidden lg:block'>
+              <ul className='flex items-center gap-4'>
                 {
                   MenuLinks.map((data, index) => (
                     <li>
-                      <a href={data.link}>{data.name}</a>
+                      <a href={data.link} className='inline-block px-4 font-semibold'>{data.name}</a>
                     </li>
                   ))
                 }
