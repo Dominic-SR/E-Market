@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}",],
+  dark: "calss",
   theme: {
     extend: {
       colors:{
@@ -10,6 +11,13 @@ module.exports = {
         brandGreen: "#2dccef",
         brandBlue: '#1376f4',
         brandWhite: "#eeeeee",
+      },
+      container: {
+        center: true,
+        padding:{
+          DEFAULT: "1rem",
+          sm: "3rem"
+        }
       }
     },
   },  
