@@ -1,4 +1,5 @@
 import React from 'react'
+import { IoMdSearch } from 'react-icons/io'
 
 function Navbar() {
 
@@ -27,7 +28,7 @@ function Navbar() {
   ]
 
   return (
-    <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 relative Z-40'>
+    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 relative Z-40">
       <div className='py-4'>
         <div className='container'>
           {/* Logo and Link Section */}
@@ -44,14 +45,28 @@ function Navbar() {
                 {
                   MenuLinks.map((data, index) => (
                     <li>
-                      <a href={data.link} className='inline-block px-4 font-semibold'>{data.name}</a>
+                      <a href={data.link} className='inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200'>
+                        {" "}
+                        {data.name}
+                        </a>
                     </li>
                   ))
                 }
               </ul>
             </div>
           </div>
+
             {/* Navbar Right section */}
+            <div>
+              {/* Search bar section */}
+                <div>
+                  <input type='text' placeholder='Search' className=''/>
+                  <IoMdSearch className='text-xl text-gray-600 dark:text-gray-400' />
+                </div>
+              {/* Dark mode section */}
+                <div></div>
+            </div>
+
         </div>
       </div>
     </div>
