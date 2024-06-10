@@ -30,7 +30,7 @@ function Navbar() {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 relative Z-40">
       <div className='py-4'>
-        <div className='container'>
+        <div className='container flex justify-between items-center'>
           {/* Logo and Link Section */}
           <div className='flex items-center gap-4'>
             <a
@@ -57,10 +57,10 @@ function Navbar() {
           </div>
 
             {/* Navbar Right section */}
-            <div>
+            <div className='flex justify-between item-center gap-4'>
               {/* Search bar section */}
-                <div>
-                  <input type='text' placeholder='Search' className=''/>
+                <div className='relative group hidden sm:block'>
+                  <input type='text' placeholder='Search' className='search-bar'/>
                   <IoMdSearch className='text-xl text-gray-600 dark:text-gray-400' />
                 </div>
               {/* Dark mode section */}
