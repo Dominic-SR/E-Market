@@ -61,7 +61,7 @@ function Navbar() {
               {/* Search bar section */}
                 <div className='relative group hidden sm:block'>
                   <input type='text' placeholder='Search' className='search-bar'/>
-                  <IoMdSearch className='text-xl text-gray-600 dark:text-gray-400' />
+                  <IoMdSearch className='text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1 right-3' />
                 </div>
               {/* Dark mode section */}
                 <div></div>
