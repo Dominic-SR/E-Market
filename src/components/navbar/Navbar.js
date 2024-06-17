@@ -81,12 +81,12 @@ function Navbar() {
                     </a>
                     
                     {/* Dropdown List */}
-                    <div className="absolute z-[9999] hidden group-hover:black w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white">
+                    <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white">
                       <ul className="space-y-2">
                         {
                           DropdownLinks.map((data,index)=>(
                             <li>
-                                <a className="text-gray-500 hover:text-black dark:hover:text-white duration-200 inline-block p-2 hover:bg-primary/20" href={data.link}>{data.name}</a>
+                                <a className="text-gray-500 hover:text-black dark:hover:text-white duration-200 p-2 hover:bg-primary/20" href={data.link}>{data.name}</a>
                             </li>
                           ))
                         }
@@ -98,7 +98,7 @@ function Navbar() {
           </div>
 
             {/* Navbar Right section */}
-            <div className='flex justify-between item-center gap-4'>
+            <div className='flex justify-between items-center gap-4'>
               {/* Search bar section */}
                 <div className='relative group hidden sm:block'>
                   <input type='text' placeholder='Search' className='search-bar'/>
