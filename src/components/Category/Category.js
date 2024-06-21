@@ -43,7 +43,7 @@ const Category = () => {
             </div>
             {/* third col */}
             <div className='col-span-2 py-10 pl-5 bg-gradient-to-br from-primary to-primary/90 text-white rounded-3xl relative h-[320px] flex items-end'>
-                <div className='space-y-3'>
+                <div>
                     <div className='mb-4'>
                         <p className='mb=[2px] text-white'>Enjoy</p>
                         <p className='text-2xl font-semibold mb-[2px]'>With</p>
