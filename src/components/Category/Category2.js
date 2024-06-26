@@ -26,7 +26,7 @@ const Category = () => {
                 <img src={Image1} alt='' className='w-[250px] absolute top-1/2 -translate-y-1/2 -right-0' />
             </div>
             {/* second col */}
-            <div className='py-10 pl-5 bg-gradient-to-br from-brandGreen/90 to-brandGreen/90 text-white rounded-3xl relative h-[320px] flex items-end'>
+            <div className='py-10 pl-5 bg-gradient-to-br from-brandGreen/90 to-brandGreen/90 text-white rounded-3xl relative h-[320px] flex items-start'>
                 <div className='mb-4'>
                     <div>
                         <p className='mb=[2px] text-white'>Enjoy</p>
@@ -42,7 +42,7 @@ const Category = () => {
                 <img src={Image2} alt='' className='w-[320px] absolute bottom-0' />
             </div>
             {/* third col */}
-            <div className='py-10 pl-5 bg-gradient-to-br from-brandYellow/90 to-brandYellow/90 text-white rounded-3xl relative h-[320px] flex items-end'>
+            <div className='py-10 pl-5 bg-gradient-to-br from-brandBlue to-brandBlue/90 text-white rounded-3xl relative h-[320px] flex items-start'>
                 <div>
                     <div className='mb-4'>
                         <p className='mb=[2px] text-white'>Enjoy</p>
@@ -51,14 +51,14 @@ const Category = () => {
                         <Button 
                             text="Browse"
                             bgColor={"bg-white"}
-                            textColor={"text-brandYellow"}
+                            textColor={"text-brandBlue"}
                         />
                     </div>
                 </div>
-                <img src={Image3} alt='' className='w-[320px] absolute -right-4 lg:top-[40px]' />
+                <img src={Image3} alt='' className='w-[200px] absolute bottom-0 right-0' />
             </div>
             
-            </div>second
+            </div>
         </div>
     </div>
   )
