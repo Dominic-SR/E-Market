@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero'
 import Category from './components/Category/Category'
 import Category2 from './components/Category/Category2'
 import Services from './components/Services/Services'
+import Banner from './components/Banner/Banner'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Category />
       <Category2 />
       <Services />
+      <Banner />
     </div>
   )
 }
