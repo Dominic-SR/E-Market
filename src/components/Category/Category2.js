@@ -35,7 +35,7 @@ const Category = () => {
                         <Button 
                             text="Browse"
                             bgColor={"bg-white"}
-                            texColor={"text-brandGreen"}
+                            textColor={"text-brandGreen"}
                         />
                     </div>
                 </div>
