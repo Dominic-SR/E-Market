@@ -7,9 +7,11 @@ import Services from './components/Services/Services'
 import Banner from './components/Banner/Banner'
 import Products from './components/Products/Products'
 import Blogs from './components/Blogs/Blogs'
+import Footer from './components/Footer/Footer'
 
 import headphone from './assets/hero/headphone.png';
 import smartwatch2 from './assets/category/smartwatch2-removebg-preview.png'
+import Partners from './components/Partners/Partners'
 
 
 const BannerData = {
@@ -46,6 +48,8 @@ function App() {
       <Products />
       <Banner data={BannerData2}/>
       <Blogs />
+      <Partners />
+      <Footer />
     </div>
   )
 }
