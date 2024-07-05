@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Category from './components/Category/Category'
@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer'
 import headphone from './assets/hero/headphone.png';
 import smartwatch2 from './assets/category/smartwatch2-removebg-preview.png'
 import Partners from './components/Partners/Partners'
+import Popup from './components/Popup/Popup'
 
 
 const BannerData = {
@@ -37,10 +38,17 @@ const BannerData2 = {
 }
 
 function App() {
+
+  const [orderPopup, setOrderPopup] =useState(true);
+
+  const handleOrderPopup = () =>{
+    setOrderPopup(!orderPopup)
+  }
+
   return (
     <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden'>
-      <Navbar />
-      <Hero />
+      <Navbar handleOrderPopup={handleOrderPopup}/>
+      <Hero handleOrderPopup={handleOrderPopup} />
       <Category />
       <Category2 />
       <Services />
@@ -50,6 +58,7 @@ function App() {
       <Blogs />
       <Partners />
       <Footer />
+      <Popup />
     </div>
   )
 }

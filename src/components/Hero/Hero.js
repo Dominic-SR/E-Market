@@ -5,7 +5,7 @@ import Image1 from '../../assets/hero/headphone.png'
 import Image2 from '../../assets/hero/vr.png'
 import Image3 from '../../assets/hero/macbook.png'
 
-const Hero = () => {
+const Hero = (handleOrderPopup) => {
 
     const HeroData = [
         {
@@ -62,6 +62,7 @@ const Hero = () => {
                                         text="Shop Buy Category"
                                         bgColor="bg-primary"
                                         textColor="text-white"
+                                        onClick={handleOrderPopup}
                                     />
                                 </div>
                             </div>
