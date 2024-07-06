@@ -10,19 +10,22 @@ const BlogData = [
         title:"How to choose Perfect SmartWatch",
         subtitle:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         published:"Jan 20, 2024 by Dilshad",
-        image: Img1
+        image: Img1,
+        aosDelay:"0"
     },
     {
         title:"How to choose Perfect Gadget",
         subtitle:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         published:"Jan 20, 2024 by Dilshad",
-        image: Img2
+        image: Img2,
+        aosDelay:"200"
     },
     {
         title:"How to choose Perfect VR Headset",
         subtitle:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         published:"Jan 20, 2024 by Dilshad",
-        image: Img3
+        image: Img3,
+        aosDelay:"400"
     },
 ]
 
@@ -37,7 +40,11 @@ const Blogs = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7'>
                 {/* Blog Card */}
                 {BlogData.map((data)=>(
-                    <div className='bg-white dark:bg-gray-900'>
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-delay={data.aosDelay}
+                    key={data.title}
+                    className='bg-white dark:bg-gray-900'>
                         {/* Image section */}
                         <div className='overflow-hidden rounded-2xl mb-2'>
                             <img src={data.image} alt="" className='w-full h-[220px] object-cover rounded-2xl hover:scale-105 duration-500' />

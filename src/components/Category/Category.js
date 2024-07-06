@@ -10,7 +10,7 @@ const Category = () => {
         <div className='container'>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
             {/* first col */}
-            <div className='py-10 pl-5 bg-gradient-to-br from-black 90 to-black/70 text-white rounded-3xl relative h-[320px] flex items-end'>
+            <div className=' py-10 pl-5 bg-gradient-to-br from-black 90 to-black/70 text-white rounded-3xl relative h-[320px] flex items-end'>
                 <div className='mb-4'>
                     <div>
                         <p className='mb=[2px] text-gray-400'>Enjoy</p>
@@ -30,7 +30,7 @@ const Category = () => {
                 <div>
                     <div className='mb-4'>
                         <p className='mb=[2px] text-white'>Enjoy</p>
-                        <p className='text-2xl font-semibold mb-[2px]'>With</p>
+                        <p className='text-2xl font-semibold mb-[2px]'>With</p>        aosDelay:"200"
                         <p className='text-4xl xl:text-5xl font-bold opacity-20'>Gadget</p>
                         <Button 
                             text="Browse"
@@ -42,7 +42,7 @@ const Category = () => {
                 <img src={Image2} alt='' className='w-[320px] absolute -right-4 lg:top-[40px]' />
             </div>
             {/* third col */}
-            <div className='col-span-2 py-10 pl-5 bg-gradient-to-br from-primary to-primary/90 text-white rounded-3xl relative h-[320px] flex items-end'>
+            <div className='sm:col-span-2 col-span-2 py-10 pl-5 bg-gradient-to-br from-primary to-primary/90 text-white rounded-3xl relative h-[320px] flex items-end'>
                 <div>
                     <div className='mb-4'>
                         <p className='mb=[2px] text-white'>Enjoy</p>
