@@ -15,7 +15,7 @@ const Popup = ({orderPopup, handlOrderPopup}) => {
                 <h1>Order Now</h1>
                 <div>
                     <IoCloseOutline 
-                        onClick={()=> handlOrderPopup}
+                        onClick={handlOrderPopup}
                         className="text-2xl cursor-pointer"
                     />
                 </div>

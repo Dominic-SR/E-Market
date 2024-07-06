@@ -47,8 +47,8 @@ function App() {
 
   return (
     <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden'>
-      <Navbar handleOrderPopup={handleOrderPopup}/>
-      <Hero handleOrderPopup={handleOrderPopup} />
+      <Navbar handlOrderPopup={handleOrderPopup}/>
+      <Hero handlOrderPopup={handleOrderPopup} />
       <Category />
       <Category2 />
       <Services />
@@ -58,7 +58,7 @@ function App() {
       <Blogs />
       <Partners />
       <Footer />
-      <Popup />
+      <Popup orderPopup={orderPopup} handlOrderPopup={handleOrderPopup}/>
     </div>
   )
 }
