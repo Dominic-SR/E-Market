@@ -1,33 +1,34 @@
 import React from 'react'
 import Slider from "react-slick";
 import Button from '../Shared/Button';
-import Image1 from '../../assets/hero/headphone.png'
-import Image2 from '../../assets/hero/vr.png'
-import Image3 from '../../assets/hero/macbook.png'
 
-const Hero = ({handlOrderPopup}) => {
+import HomeAppliances from "../../assets/mainbanner/home-appliances.png"
+import SmartPhones from "../../assets/mainbanner/smartphones.png"
+import Furniture from '../../assets/mainbanner/Furniture.png'
 
-    const HeroData = [
+const Mainbanner = ({handlOrderPopup}) => {
+
+    const HeroData = [ 
         {
             id:1,
-            img: Image1,
-            subtitle: "Beats Solo",
-            title: "Wireless",
-            title2: "Headphone",
+            img: HomeAppliances,
+            subtitle: "On Lowest",
+            title: "EMI 45%",
+            title2: "Appliances"
         },
         {
             id:2,
-            img: Image2,
-            subtitle: "Beats Solo",
-            title: "Wireless",
-            title2: "Virtual"
+            img: SmartPhones,
+            subtitle: "Latest Modal",
+            title: "Branded",
+            title2: "Smartphones"
         },
         {
-            id:3,
-            img: Image3,
-            subtitle: "Beats Solo",
-            title: "Branded",
-            title2: "Laptops"
+            id:1,
+            img: Furniture,
+            subtitle: "Watter Proof",
+            title: "Wooden",
+            title2: "Furniture"
         }
     ]
     const settings = {
@@ -51,7 +52,7 @@ const Hero = ({handlOrderPopup}) => {
             <Slider {...settings}>
                 {HeroData.map((data)=>(
                     <div key={data.id}>
-                        <div className='grid grid-cols-1 sm:grid-cols-2'>
+                        <div className='grid grid-cols-1 sm:grid-cols-2 ml-2'>
                             {/* Text Content Section */}
                             <div className='flex flex-col justify-center gap-4 sm-pl-3 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10'>
                                 <h1 
@@ -104,4 +105,4 @@ const Hero = ({handlOrderPopup}) => {
   )
 }
 
-export default Hero
+export default Mainbanner
