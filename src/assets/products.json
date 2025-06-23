@@ -1,13 +1,79 @@
 [
-    {
-        "id":1,
-        "name":"Nothing phone (2a) plus",
-        "brand":"Nothing",
-        "color":"grey",
-        "ram":8,
-        "storage":256,
-        "display":6.7,
-        "mrp":299999,
-        "image":""
-    }
+  {
+    "id": 1,
+    "name": "Nothing Phone (2a) Plus",
+    "brand": "Nothing",
+    "color": "Grey",
+    "ram": 8,
+    "storage": 256,
+    "display": 6.7,
+    "mrp": 299999,
+    "image": "https://m.media-amazon.com/images/I/61g2vYbGZXL._AC_UL480_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S23 Ultra",
+    "brand": "Samsung",
+    "color": "Phantom Black",
+    "ram": 12,
+    "storage": 512,
+    "display": 6.8,
+    "mrp": 124999,
+    "image": "https://m.media-amazon.com/images/I/61RZDb2mQxL._AC_UL480_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 3,
+    "name": "iPhone 15 Pro Max",
+    "brand": "Apple",
+    "color": "Natural Titanium",
+    "ram": 8,
+    "storage": 512,
+    "display": 6.7,
+    "mrp": 159900,
+    "image": "https://m.media-amazon.com/images/I/81fxjeu8fdL._AC_UL480_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 4,
+    "name": "OnePlus 12R",
+    "brand": "OnePlus",
+    "color": "Iron Grey",
+    "ram": 16,
+    "storage": 256,
+    "display": 6.78,
+    "mrp": 45999,
+    "image": "https://m.media-amazon.com/images/I/61QRgOgBx0L._AC_UL480_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Realme Narzo 70 Pro 5G",
+    "brand": "Realme",
+    "color": "Glass Green",
+    "ram": 8,
+    "storage": 128,
+    "display": 6.67,
+    "mrp": 19999,
+    "image": "https://m.media-amazon.com/images/I/712N3G1XZ8L._AC_UL480_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Redmi Note 13 Pro+ 5G",
+    "brand": "Redmi",
+    "color": "Fusion Purple",
+    "ram": 12,
+    "storage": 256,
+    "display": 6.67,
+    "mrp": 33999,
+    "image": "https://m.media-amazon.com/images/I/71yyLDfKqVL._AC_UL480_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Motorola Edge 50 Pro",
+    "brand": "Motorola",
+    "color": "Black Beauty",
+    "ram": 12,
+    "storage": 256,
+    "display": 6.7,
+    "mrp": 31999,
+    "image": "https://m.media-amazon.com/images/I/71C0a0m7vQL._AC_UL480_FMwebp_QL65_.jpg"
+  }
 ]
