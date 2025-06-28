@@ -1,6 +1,6 @@
 import React from 'react'
 import productData from "../../assets/products.json"
-const Sidebar = ({brands}) => {
+const Sidebar = ({brands,priceRange,selectedBrands,setSelectedBrand}) => {
     const ramOption = [...new Set(productData.map((p)=>p.ram))].sort((a,b)=> a - b)
   const storageOption = [...new Set(productData.map((p)=>p.ram))].sort((a,b)=> a - b)
   return (
@@ -9,10 +9,14 @@ const Sidebar = ({brands}) => {
       {/* Brand FIlter */}
       <div className="mb-6">
         <h3 className='text-red-500 font-medium mb-3'>Brads</h3>
-
         {brands.map((brand)=>(
-          <label className='flex items-center mb-2 cursor-pointer'>
-            <input type='checkbox' className='mr-2 accent-red-500' />
+          <label key={brand} className='flex items-center mb-2 cursor-pointer'>
+            <input 
+            type='checkbox'
+            value={selectedBrands.includes(brand)}
+            onChange={()=>setSelectedBrand(selectedBrands.includes(brand)?selectedBrands.filter((b)=>b!==brand):[...selectedBrands,brand])} 
+            className='mr-2 accent-red-500' 
+            />
             {brand.charAt(0).toUpperCase() + brand.slice(1)}
           </label>
         ))}
@@ -22,8 +26,8 @@ const Sidebar = ({brands}) => {
         <h3 className='text-red-500 font-medium mb-3'>Price Range</h3>
         <input type='range' className='w-full accent-red-500' />
         <div className="flex justify-between text-sm mt-2">
-          <span>₹ 4500</span>
-          <span>₹ 10000</span>
+          <span>₹ {priceRange[0]}</span>
+          <span>₹ {priceRange[1]}</span>
         </div>
       </div>
       {/* Ram  */}
