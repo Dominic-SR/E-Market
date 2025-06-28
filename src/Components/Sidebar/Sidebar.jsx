@@ -1,8 +1,11 @@
 import React from 'react'
 import productData from "../../assets/products.json"
-const Sidebar = ({brands,priceRange,selectedBrands,setSelectedBrand}) => {
-    const ramOption = [...new Set(productData.map((p)=>p.ram))].sort((a,b)=> a - b)
+const Sidebar = ({brands, priceRange, selectedBrands, setSelectedBrand, setPriceRange, selectedRam, setSelectedRam, selectedStorage, setSelectedStorage}) => {
+  const ramOption = [...new Set(productData.map((p)=>p.ram))].sort((a,b)=> a - b)
   const storageOption = [...new Set(productData.map((p)=>p.ram))].sort((a,b)=> a - b)
+  const minPrice = Math.min(...productData.map((p)=>(p.mrp)))
+  const maxPrice = Math.max(...productData.map((p)=>(p.mrp)))
+
   return (
     <div className='w-64 bg-grey-100 p-4 h-screen sticky top-16 overflow-y-auto shadow'>
       <h2 className='text-xl font-semibold text-red-500 mb-6'>Sidebar</h2>
@@ -24,7 +27,14 @@ const Sidebar = ({brands,priceRange,selectedBrands,setSelectedBrand}) => {
       {/* Price Range */}
         <div className="mb-6">
         <h3 className='text-red-500 font-medium mb-3'>Price Range</h3>
-        <input type='range' className='w-full accent-red-500' />
+        <input 
+        min={minPrice}
+        max={maxPrice}
+        value={priceRange[1]}
+        onChange={(e)=>setPriceRange([minPrice,parseInt(e.target.value)])}
+        type='range' 
+        className='w-full accent-red-500' 
+        />
         <div className="flex justify-between text-sm mt-2">
           <span>₹ {priceRange[0]}</span>
           <span>₹ {priceRange[1]}</span>
@@ -33,11 +43,14 @@ const Sidebar = ({brands,priceRange,selectedBrands,setSelectedBrand}) => {
       {/* Ram  */}
       <div className="mb-6">
         <h3 className='text-red-500 font-medium mb-3'>RAM</h3>
-        <select className='w-full border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 p-2'>
+        <select 
+          value={selectedRam}
+          onChange={(e)=>setSelectedRam(e.target.value?parseInt(e.target.value):null)}
+          className='w-full border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 p-2'>
           <option value="">All</option>
           {ramOption.map((ram)=>(
             <option key={ram} value={ram}>
-              {ram}
+              {ram} GB
             </option>
           ))}
         </select>
@@ -45,7 +58,10 @@ const Sidebar = ({brands,priceRange,selectedBrands,setSelectedBrand}) => {
       {/* Storage */}
          <div className="mb-6">
         <h3 className='text-red-500 font-medium mb-3'>Storage</h3>
-        <select className='w-full border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 p-2'>
+        <select 
+        value={selectedStorage}
+        onChange={(e)=>setSelectedStorage(e.target.value?parseInt(e.target.value):null)}
+        className='w-full border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 p-2'>
           <option value="">All</option>
           {storageOption.map((ram)=>(
             <option key={ram} value={ram}>
