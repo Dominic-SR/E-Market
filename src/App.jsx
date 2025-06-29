@@ -29,10 +29,9 @@ function App() {
           selectedStorage={selectedStorage}
           setSelectedStorage={setSelectedStorage}
         />
-        <div className='flex-1'>
-          <div className='p-4'>
-
-          </div>
+        <div className='className="max-2-7xl-1'>
+          <ProductCard />
+          <ProductCard />
           <ProductCard />
         </div>
       </div>
