@@ -6,7 +6,7 @@ const ProductCard = () => {
         <img src='https://m.media-amazon.com/images/I/41o5rDVpGJL._SX300_SY300_QL70_FMwebp_.jpg'
          className='w-full h-48 object-contain mb-4'
          alt='product'/>
-        <h3 className='text-lg font-semibold mb-3 text-red-500'>Product Name</h3>
+        <h3 className='text-lg font-semibold mb-2 text-red-500'>Product Name</h3>
         <p className='text-gray-500 mb-2'>Redmi | Blue</p>
         <p className='text-gray-500 mb-2'>8GB Ram | 256GB Storage</p>
         <p className='text-gray-500 mb-4'>6.7 Inch Display</p>

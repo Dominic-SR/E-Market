@@ -29,10 +29,24 @@ function App() {
           selectedStorage={selectedStorage}
           setSelectedStorage={setSelectedStorage}
         />
-        <div className='className="max-2-7xl-1'>
+        <div className='flex-1 bg-red-50'>
+        <div className='max-w-7xl mx-auto p-4'>
+          <h2 className='text-2xl font-bold text-red-500 p-4'>Products (5)</h2>
+          {/* <p className='text-center text-gray-600'>No product found match you creteria.</p> */}.
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
           <ProductCard />
           <ProductCard />
           <ProductCard />
+
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          </div>
+        </div>
         </div>
       </div>
     </div>

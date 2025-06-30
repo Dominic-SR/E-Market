@@ -7,7 +7,7 @@ const Sidebar = ({brands, priceRange, selectedBrands, setSelectedBrand, setPrice
   const maxPrice = Math.max(...productData.map((p)=>(p.mrp)))
 
   return (
-    <div className='w-64 bg-grey-100 p-4 h-screen sticky top-16 overflow-y-auto shadow'>
+    <div className='w-64 bg-red-100 bg-grey-100 p-4 h-screen sticky top-16 overflow-y-auto shadow'>
       <h2 className='text-xl font-semibold text-red-500 mb-6'>Sidebar</h2>
       {/* Brand FIlter */}
       <div className="mb-6">
