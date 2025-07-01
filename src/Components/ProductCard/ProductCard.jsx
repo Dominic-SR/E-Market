@@ -7,7 +7,7 @@ const ProductCard = ({product}) => {
          className='w-full h-48 object-contain mb-4'
          alt={product.name}/>
         <h3 className='text-lg font-semibold mb-2 text-red-500'>{product.name}</h3>
-        <p className='text-gray-500 mb-2'>{product.brand} | {product.brand}</p>
+        <p className='text-gray-500 mb-2'>{product.brand} | {product.color}</p>
         <p className='text-gray-500 mb-2'>{product.ram} Ram | {product.storage} Storage</p>
         <p className='text-gray-500 mb-4'>{product.display} Inch Display</p>
         <div className='flex items-center justify-between'>

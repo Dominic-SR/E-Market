@@ -13,9 +13,20 @@ function App() {
   const brands = [...new Set(productData.map((p)=>p.brand))].sort();
 
   const filterProducts = productData.filter((product)=>{
-    
     const matchesSearch = product.name.toLowerCase().includes(search.toLowerCase()) || product.brand.toLowerCase().includes(search.toLowerCase()) || product.color.toLowerCase().includes(search.toLowerCase())
-    return matchesSearch;
+   
+    console.log("ssss",selectedRam,product.ram);
+    
+
+    const matchCheckBrand = selectedBrands.length === 0 || selectedBrands.includes(product.brand)
+
+    const matchPrice = product.price >= priceRange[0] && product.price <= priceRange[1];
+
+    const matchRam = selectedRam === null || product.ram === selectedRam;
+
+    const matchStorage = selectedStorage === null || product.storage === selectedStorage;
+
+    return matchesSearch && matchCheckBrand && matchPrice && matchRam && matchStorage;
   })
   return (
     <div>

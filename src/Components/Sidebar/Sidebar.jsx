@@ -2,7 +2,7 @@ import React from 'react'
 import productData from "../../assets/products.json"
 const Sidebar = ({brands, priceRange, selectedBrands, setSelectedBrand, setPriceRange, selectedRam, setSelectedRam, selectedStorage, setSelectedStorage}) => {
   const ramOption = [...new Set(productData.map((p)=>p.ram))].sort((a,b)=> a - b)
-  const storageOption = [...new Set(productData.map((p)=>p.ram))].sort((a,b)=> a - b)
+  const storageOption = [...new Set(productData.map((p)=>p.storage))].sort((a,b)=> a - b)
   const minPrice = Math.min(...productData.map((p)=>(p.price)))
   const maxPrice = Math.max(...productData.map((p)=>(p.price)))
 
@@ -63,9 +63,9 @@ const Sidebar = ({brands, priceRange, selectedBrands, setSelectedBrand, setPrice
         onChange={(e)=>setSelectedStorage(e.target.value?parseInt(e.target.value):null)}
         className='w-full border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 p-2'>
           <option value="">All</option>
-          {storageOption.map((ram)=>(
-            <option key={ram} value={ram}>
-              {ram}
+          {storageOption.map((storage)=>(
+            <option key={storage} value={storage}>
+              {storage}
             </option>
           ))}
         </select>
