@@ -3,8 +3,8 @@ import productData from "../../assets/products.json"
 const Sidebar = ({brands, priceRange, selectedBrands, setSelectedBrand, setPriceRange, selectedRam, setSelectedRam, selectedStorage, setSelectedStorage}) => {
   const ramOption = [...new Set(productData.map((p)=>p.ram))].sort((a,b)=> a - b)
   const storageOption = [...new Set(productData.map((p)=>p.ram))].sort((a,b)=> a - b)
-  const minPrice = Math.min(...productData.map((p)=>(p.mrp)))
-  const maxPrice = Math.max(...productData.map((p)=>(p.mrp)))
+  const minPrice = Math.min(...productData.map((p)=>(p.price)))
+  const maxPrice = Math.max(...productData.map((p)=>(p.price)))
 
   return (
     <div className='w-64 bg-red-100 bg-grey-100 p-4 h-screen sticky top-16 overflow-y-auto shadow'>
