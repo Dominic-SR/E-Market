@@ -13,7 +13,9 @@ function App() {
   const brands = [...new Set(productData.map((p)=>p.brand))].sort();
 
   const filterProducts = productData.filter((product)=>{
-    return true
+    
+    const matchesSearch = product.name.toLowerCase().includes(search.toLowerCase()) || product.brand.toLowerCase().includes(search.toLowerCase()) || product.color.toLowerCase().includes(search.toLowerCase())
+    return matchesSearch;
   })
   return (
     <div>
@@ -40,7 +42,7 @@ function App() {
             <p className='text-center text-gray-600'>No product found match you creteria.</p>
           ):(
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-            {productData.map((product)=>(
+            {filterProducts.map((product)=>(
                 <ProductCard key={product.id} product={product} />
             ))}
           </div>
