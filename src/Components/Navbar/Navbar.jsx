@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Navbar = ({search, setSearch}) => {
+const Navbar = ({search, setSearch, cartItems }) => {
+  const totalItems = cartItems.length; 
   return (
     <nav className='bg-red-500 p-4 shaow-md'>
       <div className='max-w-7xl mx-auto flex justify-between items-center'>
@@ -10,7 +11,9 @@ const Navbar = ({search, setSearch}) => {
         value={search}
         onChange={(e)=>setSearch(e.target.value)} 
         placeholder='Search for smartphones' 
-        className='p-3 text-base bg-white rounded w-1/2 focus:outline-none' />
+        className='p-3 text-base bg-white rounded w-1/2 focus:outline-none' />'
+        
+        {totalItems.length > 0 && <button className='relative text-white text-3xl'>🛒<span className="absolute -top-2 right-2 bg-red-500 px-2 py-1 rounded-full text-sm">{totalItems}</span></button>}
       </div>
     </nav>
   )

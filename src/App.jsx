@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar/Navbar"
 import Sidebar from "./Components/Sidebar/Sidebar"
 import productData from "./assets/products.json"
 import ProductCard from './Components/ProductCard/ProductCard'
+import CardSidebar from './Components/CardSidebar/CardSidebar'
 function App() {
   const [search, setSearch] = useState("")
   const [priceRange, setPriceRange] = useState([Math.min(...productData.map((p)=>p.price)), Math.max(...productData.map((p)=>p.price))])
@@ -12,11 +13,14 @@ function App() {
   const [selectedStorage, setSelectedStorage] = useState(null)
   const brands = [...new Set(productData.map((p)=>p.brand))].sort();
 
+  const [cartItems, setCartItems] = useState([])
+
+  const addToCard = (product) =>{}
+  const removeCard = (id) =>{}
+  const updatedQuatity = (id, quantity) =>{}
+
   const filterProducts = productData.filter((product)=>{
     const matchesSearch = product.name.toLowerCase().includes(search.toLowerCase()) || product.brand.toLowerCase().includes(search.toLowerCase()) || product.color.toLowerCase().includes(search.toLowerCase())
-   
-    console.log("ssss",selectedRam,product.ram);
-    
 
     const matchCheckBrand = selectedBrands.length === 0 || selectedBrands.includes(product.brand)
 
@@ -63,6 +67,9 @@ function App() {
         </div>
         </div>
       </div>
+      <CardSidebar 
+       cartItems={cartItems} 
+      />
     </div>
   )
 }
