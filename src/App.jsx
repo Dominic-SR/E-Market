@@ -13,33 +13,21 @@ function App() {
   const [selectedStorage, setSelectedStorage] = useState(null)
   const brands = [...new Set(productData.map((p)=>p.brand))].sort();
 
-  const [cartItems, setCartItems] = useState([{
-    "id": 3,
-    "name": "iPhone 15 Pro Max",
-    "brand": "Apple",
-    "color": "Natural Titanium",
-    "ram": 8,
-    "storage": 512,
-    "display": 6.7,
-    "mrp": 88900,
-    "price": 78000,
-    "image": "https://m.media-amazon.com/images/I/81fxjeu8fdL._AC_UL480_FMwebp_QL65_.jpg"
-  },
-  {
-    "id": 4,
-    "name": "OnePlus 12R",
-    "brand": "OnePlus",
-    "color": "Iron Grey",
-    "ram": 16,
-    "storage": 256,
-    "display": 6.78,
-    "mrp": 45999,
-    "price":35900,
-    "image": "https://m.media-amazon.com/images/I/61QRgOgBx0L._AC_UL480_FMwebp_QL65_.jpg"
-  }])
+  const [cartItems, setCartItems] = useState([])
   const [isCardOpen, setIsCardOpen] = useState(false)
 
-  const addToCard = (product) =>{}
+  const addToCard = (product) =>{
+    setCartItems((prev)=>{
+      const existingItem = prev.find((item) => item.id === product,id)
+      if(existingItem){
+      return prev.map((item)=>item.id === product.id?{...item,quantity:item.quantity+1}:item)
+      }
+      return [...prev, [{...product,quantity:1}]]
+      }
+    )
+  }
+
+
   const removeCard = (id) =>{}
   const updatedQuatity = (id, quantity) =>{}
 
@@ -84,7 +72,11 @@ function App() {
           ):(
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
             {filterProducts.map((product)=>(
-                <ProductCard key={product.id} product={product} />
+                <ProductCard 
+                  key={product.id} 
+                  product={product} 
+                  addToCard={addToCard}
+                />
             ))}
           </div>
           )}
