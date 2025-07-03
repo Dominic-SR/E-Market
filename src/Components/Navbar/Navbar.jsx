@@ -16,7 +16,7 @@ const Navbar = ({search, setSearch, cartItems ,setIsCardOpen}) => {
         placeholder='Search for smartphones' 
         className='p-3 text-base bg-white rounded w-1/2 focus:outline-none' />'
         
-        {totalItems > 0 && <button className='relative text-white text-3xl' onClick={()=>setIsCardOpen(true)}>🛒<span className="absolute -top-2 right-2 bg-red-500 px-2 py-1 rounded-full text-sm">{totalItems}</span></button>}
+        {totalItems > 0 && <button className='relative text-white text-3xl' onClick={()=>setIsCardOpen((prev)=>!prev)}>🛒<span className="absolute -top-2 right-2 bg-red-500 px-2 py-1 rounded-full text-sm">{totalItems}</span></button>}
       </div>
     </nav>
   )
