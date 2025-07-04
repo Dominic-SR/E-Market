@@ -18,18 +18,26 @@ function App() {
 
   const addToCard = (product) =>{
     setCartItems((prev)=>{
-      const existingItem = prev.find((item) => item.id === product,id)
+      const existingItem = prev.find((item) => item.id === product.id)
       if(existingItem){
       return prev.map((item)=>item.id === product.id?{...item,quantity:item.quantity+1}:item)
       }
-      return [...prev, [{...product,quantity:1}]]
+      return [...prev, {...product,quantity:1}]
       }
     )
   }
 
 
   const removeCard = (id) =>{}
-  const updatedQuatity = (id, quantity) =>{}
+  const updatedQuatity = (id, quantity) =>{
+    console.log("xxx",quantity);
+    
+    if(quantity<0){
+
+    }else{
+      setCartItems((prev)=>prev.map((item) => (item.id == id ? {...item, quantity}: item)))
+    }
+  }
 
   const filterProducts = productData.filter((product)=>{
     const matchesSearch = product.name.toLowerCase().includes(search.toLowerCase()) || product.brand.toLowerCase().includes(search.toLowerCase()) || product.color.toLowerCase().includes(search.toLowerCase())
@@ -89,6 +97,7 @@ function App() {
        cartItems={cartItems} 
        isCardOpen={isCardOpen} 
        setIsCardOpen={setIsCardOpen}
+       updatedQuatity={updatedQuatity}
       />
     </div>
   )
