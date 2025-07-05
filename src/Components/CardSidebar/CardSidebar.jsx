@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CardSidebar = ({cartItems,isCardOpen,setIsCardOpen,updatedQuatity}) => {
+const CardSidebar = ({cartItems,isCardOpen,setIsCardOpen,updatedQuatity,removeFromCard}) => {
   console.log("card",cartItems);
   
   return (
@@ -24,6 +24,8 @@ const CardSidebar = ({cartItems,isCardOpen,setIsCardOpen,updatedQuatity}) => {
                     <button className='px-2 py-1 bg-gray-200 rounded' onClick={()=>updatedQuatity(item.id, item.quantity - 1)}>-</button>
                     <span className='mx-2'>{item.quantity}</span>
                     <button className='px-2 py-1 bg-gray-200 rounded' onClick={()=>updatedQuatity(item.id, item.quantity + 1)}>+</button>
+
+                    <button className='ml-4 text-red-400 hover:text-red-700' onClick={()=>removeFromCard(item.id)}>Remove</button>
                   </div>  
                 </div>
               </div>

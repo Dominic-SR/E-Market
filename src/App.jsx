@@ -28,12 +28,14 @@ function App() {
   }
 
 
-  const removeCard = (id) =>{}
-  const updatedQuatity = (id, quantity) =>{
-    console.log("xxx",quantity);
-    
-    if(quantity<0){
+  const removeFromCard = (id) =>{
+    setCartItems((prev)=>prev.filter((item)=>item.id !== id))
+  }
 
+  const updatedQuatity = (id, quantity) =>{
+    
+    if(quantity <= 0){
+      removeCard(id)
     }else{
       setCartItems((prev)=>prev.map((item) => (item.id == id ? {...item, quantity}: item)))
     }
@@ -98,6 +100,7 @@ function App() {
        isCardOpen={isCardOpen} 
        setIsCardOpen={setIsCardOpen}
        updatedQuatity={updatedQuatity}
+       removeFromCard={removeFromCard}
       />
     </div>
   )
