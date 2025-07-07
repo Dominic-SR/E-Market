@@ -1,4 +1,5 @@
 import React from 'react'
+import { GiHamburgerMenu } from "react-icons/gi";
 import productData from "../../assets/products.json"
 const Sidebar = ({brands, priceRange, selectedBrands, setSelectedBrand, setPriceRange, selectedRam, setSelectedRam, selectedStorage, setSelectedStorage}) => {
   const ramOption = [...new Set(productData.map((p)=>p.ram))].sort((a,b)=> a - b)
@@ -8,6 +9,9 @@ const Sidebar = ({brands, priceRange, selectedBrands, setSelectedBrand, setPrice
 
   return (
     <div className='w-64 bg-red-100 bg-grey-100 p-4 h-screen sticky top-16 overflow-y-auto shadow'>
+      <GiHamburgerMenu 
+        className='absolute b-4'
+      />
       <h2 className='text-xl font-semibold text-red-500 mb-6'>Sidebar</h2>
       {/* Brand FIlter */}
       <div className="mb-6">
