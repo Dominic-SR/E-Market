@@ -42,5 +42,4 @@
 
 <p dir="auto">This project is under <a href="https://github.com/Dominic-SR/food-court/tree/main?tab=MIT-1-ov-file">MIT</a> license.</p>
 
-https://food-court-red.vercel.app/
 
