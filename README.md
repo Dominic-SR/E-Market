@@ -7,7 +7,7 @@
 
 
 <div align="center" dir="auto">
-    <h4>Desktop View</h4>
+<!--     <h4>Desktop View</h4> -->
 <!--     <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/home.png" width="600" style="max-width: 100%;"></a>
     <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/chef.png" width="600" style="max-width: 100%;"></a>
     <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/burger.png" width="600" style="max-width: 100%;"></a>
@@ -19,7 +19,7 @@
 </div>
 
 <div align="center" dir="auto">
-  <h4>Mobile View</h4>
+<!--   <h4>Mobile View</h4> -->
 <!--      <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/home-mobile.png" width="600" style="max-width: 100%;"></a>
     <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/chef-mobile.png" width="600" style="max-width: 100%;"></a>
     <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/burger-mobile.png" width="600" style="max-width: 100%;"></a>
