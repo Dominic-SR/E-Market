@@ -1,7 +1,7 @@
 <h1 align="center" >E Market</h1>
 
 <div align="center" dir="auto">
-  <p>It's a Responsive E commerce website</p>
+  <p>It's a Responsive E commerce website with add to card</p>
 </div>
 
 
