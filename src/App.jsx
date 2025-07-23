@@ -12,10 +12,9 @@ function App() {
   const [selectedRam, setSelectedRam] = useState(null)
   const [selectedStorage, setSelectedStorage] = useState(null)
   const brands = [...new Set(productData.map((p)=>p.brand))].sort();
-
   const [cartItems, setCartItems] = useState([])
   const [isCardOpen, setIsCardOpen] = useState(false)
-
+  const [isOpenMenu, setIsOpenMenu] = useState(true)
   const addToCard = (product) =>{
     setCartItems((prev)=>{
       const existingItem = prev.find((item) => item.id === product.id)
@@ -54,6 +53,7 @@ function App() {
 
     return matchesSearch && matchCheckBrand && matchPrice && matchRam && matchStorage;
   })
+  
   return (
     <div>
       <Navbar 
@@ -61,6 +61,8 @@ function App() {
         cartItems={cartItems}
         setSearch={setSearch} 
         setIsCardOpen={setIsCardOpen}
+        isOpenMenu={isOpenMenu}
+        setIsOpenMenu={setIsOpenMenu}
       />
       <div className='flex'>
         <Sidebar 
@@ -73,6 +75,7 @@ function App() {
           setSelectedRam={setSelectedRam}
           selectedStorage={selectedStorage}
           setSelectedStorage={setSelectedStorage}
+          isOpenMenu={isOpenMenu}
         />
         <div className='flex-1 bg-red-50'>
         <div className='max-w-7xl mx-auto p-4'>
@@ -90,8 +93,6 @@ function App() {
             ))}
           </div>
           )}
-          
-
         </div>
         </div>
       </div>

@@ -1,17 +1,13 @@
 import React from 'react'
-import { GiHamburgerMenu } from "react-icons/gi";
 import productData from "../../assets/products.json"
-const Sidebar = ({brands, priceRange, selectedBrands, setSelectedBrand, setPriceRange, selectedRam, setSelectedRam, selectedStorage, setSelectedStorage}) => {
+const Sidebar = ({brands, priceRange, selectedBrands, setSelectedBrand, setPriceRange, selectedRam, setSelectedRam, selectedStorage, setSelectedStorage, isOpenMenu}) => {
   const ramOption = [...new Set(productData.map((p)=>p.ram))].sort((a,b)=> a - b)
   const storageOption = [...new Set(productData.map((p)=>p.storage))].sort((a,b)=> a - b)
   const minPrice = Math.min(...productData.map((p)=>(p.price)))
   const maxPrice = Math.max(...productData.map((p)=>(p.price)))
 
   return (
-    <div className='w-64 bg-red-100 bg-grey-100 p-4 h-screen sticky top-16 overflow-y-auto shadow'>
-      <GiHamburgerMenu 
-        className='absolute h-8 w-2xs top-[-20px] z-20'
-      />
+    <div className={`${isOpenMenu ? "w-64" : "w-[0px] p-[0px]"} transition-all bg-red-100 bg-grey-100 p-4 h-screen sticky top-16 overflow-y-auto shadow`}>
       <h2 className='text-xl font-semibold text-red-500 mb-6'>Sidebar</h2>
       {/* Brand FIlter */}
       <div className="mb-6">
