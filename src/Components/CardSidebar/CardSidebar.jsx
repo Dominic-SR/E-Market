@@ -14,7 +14,7 @@ const CardSidebar = ({cartItems,isCardOpen,setIsCardOpen,updatedQuatity,removeFr
         
           {cartItems.length === 0 ?<p className='text-gray-600 text-center mt-10'>Your card is empty !</p>:<div className=''>
             {cartItems.map((item)=>(
-              <div key={item.id} className='flex'>
+              <div key={item.id} className='flex py-4'>
                 <img src={item.image} className='w-16 h-16 object-contain mr-4' />
                 <div className="flex-1">
                   <h3 className='text-sm font-semibold'>{item.name}</h3>
