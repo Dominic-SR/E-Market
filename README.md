@@ -4,7 +4,9 @@
   <p>It's a Responsive E commerce website with add to card</p>
 </div>
 
-
+<div align="center" dir="auto">
+  <p>Desktop View</p>
+</div>
 
 <div align="center" dir="auto">
 <!--     <h4>Desktop View</h4> -->
