@@ -6,6 +6,15 @@
 
 <div align="center" dir="auto">
   <p>Desktop View</p>
+
+  <img src="https://raw.githubusercontent.com/Dominic-SR/E-Market/refs/heads/main/src/assets/images/pic-1.png" 
+  />
+
+  <img src="https://raw.githubusercontent.com/Dominic-SR/E-Market/refs/heads/main/src/assets/images/pic-2.png" 
+  />
+
+  <img src="https://raw.githubusercontent.com/Dominic-SR/E-Market/refs/heads/main/src/assets/images/pic-3.png" 
+  />
 </div>
 
 <div align="center" dir="auto">
