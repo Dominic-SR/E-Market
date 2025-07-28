@@ -1,11 +1,11 @@
 <h1 align="center" >E Market</h1>
 
 <div align="center" dir="auto">
-  <p>It's a Responsive E commerce website with add to card</p>
+  <p>It's a Responsive 📱 Mobile E commerce website with add to card</p>
 </div>
 
 <div align="center" dir="auto">
-  <p>Desktop View</p>
+  <p>🖥️ Desktop View</p>
 
   <img src="https://raw.githubusercontent.com/Dominic-SR/E-Market/refs/heads/main/src/assets/images/pic-1.png" 
   />
@@ -18,7 +18,7 @@
 </div>
 
 <div align="center" dir="auto">
-  <p>Mobile View</p>
+  <p>📱 Mobile View</p>
 
   <img src="https://raw.githubusercontent.com/Dominic-SR/E-Market/refs/heads/main/src/assets/images/sm-pic-1.png" 
   />
