@@ -1,4 +1,4 @@
-<h1 align="center" >E Market</h1>
+<h1 align="center" >🛒 E Market</h1>
 
 <div align="center" dir="auto">
   <p>It's a Responsive 📱 Mobile E commerce website with add to card</p>
@@ -28,30 +28,6 @@
 
   <img src="https://raw.githubusercontent.com/Dominic-SR/E-Market/refs/heads/main/src/assets/images/sm-pic-3.png" 
   />
-</div>
-
-<div align="center" dir="auto">
-<!--     <h4>Desktop View</h4> -->
-<!--     <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/home.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/chef.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/burger.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/statistic.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/pizza.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/packages.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/chicken.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/footer.png" width="600" style="max-width: 100%;"></a> -->
-</div>
-
-<div align="center" dir="auto">
-<!--   <h4>Mobile View</h4> -->
-<!--      <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/home-mobile.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/chef-mobile.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/burger-mobile.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/statistic-mobile.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/pizza-mobile.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/package-mobile.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/chocken-mobile.png" width="600" style="max-width: 100%;"></a>
-    <a target="_blank" rel="noopener noreferrer" href=""><img src="https://github.com/Dominic-SR/food-court/blob/main/assets/screenshots/footer-mobile.png" width="600" style="max-width: 100%;"></a> -->
 </div>
 
 <h2> 💻 Technologies used </h2>
